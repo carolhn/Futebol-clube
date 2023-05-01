@@ -30,23 +30,15 @@ Para rodar a aplicação em sua maquina.
 
 
 ## Instalação com Docker:
-### Configuração para rodar o projeto:
-- Node versão igual ou superior à 16.14.0 LTS;
-- Docker;
-- Docker-compose versão igual ou superior à 1.29.2.
-
 1. Rode o serviço `node` com o comando `npm run compose:up` na principal.
   - Esse serviço irá inicializar um container chamado `app_backend`, `app-frontend-1` e `db`.
 
 🚨 Ao subir a aplicação, o serviço de Front-end estará rodando na port 3000 da sua máquina, o Back-end estará rodando na porta 3001 e o banco de dados MySQL estará rodando na porta 3002.
 
+2. Para rodar os testes de integração e verificar a sua cobertura são utilizados os seguintes comandos:
+`cd app/backend
+npm run test:coverage`
 
-2. Use o comando `docker exec -it trybers_and_dragons bash`.
-  - Ele te dará acesso ao terminal interativo do container criado pelo compose, que está rodando em segundo plano.
-
-3. Instale as dependências [**Caso existam**] com `npm install`
-
-4. Execute a aplicação com `npm start` ou `npm run dev`
 
 ## Contato:
 [![Linkedin](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/caroline-nunes-devfullstack/)
