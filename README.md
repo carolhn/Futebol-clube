@@ -36,9 +36,9 @@ Para rodar a aplicação em sua maquina.
 - 🚨 Ao subir a aplicação, o serviço de Front-end estará rodando na port 3000 da sua máquina, o Back-end estará rodando na porta 3001 e o banco de dados MySQL estará rodando na porta 3002.
 
 2. Para rodar os testes de integração e verificar a sua cobertura são utilizados os seguintes comandos:
-`cd app
-cd backend
-npm run test:coverage`
+`cd app`
+`cd backend`
+`npm run test:coverage`
 
 
 ## Contato:
