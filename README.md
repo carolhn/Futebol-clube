@@ -3,14 +3,14 @@
 ## Contexto do projeto:
 Este é um projeto da Trybe que foi desenvolvido no módulo de Back-end. O TFC é um site informativo sobre partidas e classificações de futebol. Nele foi desenvolvida uma API utilizando o método TDD (Test Driven Development) e feita a sua integração com um front-end (já estruturado) e com um banco de dados MySQL. Neste projeto buscou-se seguir todas as diretrizes dos princípios SOLID e do paradigma de programação POO (Programação orientada a objetos).O back-end implementa as regras de negócio para popular adequadamente a tabela disponível no front-end que será exibida para a pessoa usuária do sistema.
 
-## Tecnologias uitlizadas:
-Em seu desenvolvimento foi utilizada linguagem TypeScript para escrever os códigos e Node.js juntamente com o framework Express para fornecer toda a estrutura que possibilitou a construção dos endpoints da aplicação.
+## Tecnologias utilizadas:
+Em seu desenvolvimento foi utilizada linguagem TypeScript e JavaScript para escrever os códigos e Node.js juntamente com o framework Express para fornecer toda a estrutura que possibilitou a construção dos endpoints da aplicação.
 
-Fora isso, foi utilizado o ORM Sequelize, que é o responsável por toda a abstração de consultas e manipulações do banco de dados MySQL.
+Foi utilizado o ORM Sequelize, que é o responsável por toda a abstração de consultas e manipulações do banco de dados MySQL.
 
 Para a geração e verificação de tokens foi utilizado o JWT (JSON Web Token), com ele é possível verificar se o usuário está devidamente autenticado e se ele tem permissões de administrador para realizar determinadas ações, como cadastrar, atualizar ou finalizar partidas, deixando assim a aplicação mais segura.
 
-E por fim, para os testes de integração foi utilizado Mocha e Chai para estruturar os testes e fazer as asserções e o Sinon para mockar as funções, não permitindo que os testes tivessem acesso ao banco de dados.
+Os testes de integração foi utilizado Mocha e Chai para estruturar os testes e fazer as asserções e o Sinon para mockar as funções, não permitindo que os testes tivessem acesso ao banco de dados.
 
 
 ## Instalação Local:
@@ -30,9 +30,16 @@ Para rodar a aplicação em sua maquina.
 
 
 ## Instalação com Docker:
-1. Rode o serviço `node` com o comando `compose:up` na principal.
+### Configuração para rodar o projeto:
+- Node versão igual ou superior à 16.14.0 LTS;
+- Docker;
+- Docker-compose versão igual ou superior à 1.29.2.
+
+1. Rode o serviço `node` com o comando `npm run compose:up` na principal.
   - Esse serviço irá inicializar um container chamado `app_backend`, `app-frontend-1` e `db`.
-  - A partir daqui você pode rodar o container `app_backend` via CLI ou abri-lo no VS Code.
+
+🚨 Ao subir a aplicação, o serviço de Front-end estará rodando na port 3000 da sua máquina, o Back-end estará rodando na porta 3001 e o banco de dados MySQL estará rodando na porta 3002.
+
 
 2. Use o comando `docker exec -it trybers_and_dragons bash`.
   - Ele te dará acesso ao terminal interativo do container criado pelo compose, que está rodando em segundo plano.
