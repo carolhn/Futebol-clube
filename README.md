@@ -33,10 +33,11 @@ Para rodar a aplicação em sua maquina.
 1. Rode o serviço `node` com o comando `npm run compose:up` na principal.
   - Esse serviço irá inicializar um container chamado `app_backend`, `app-frontend-1` e `db`.
 
-🚨 Ao subir a aplicação, o serviço de Front-end estará rodando na port 3000 da sua máquina, o Back-end estará rodando na porta 3001 e o banco de dados MySQL estará rodando na porta 3002.
+- 🚨 Ao subir a aplicação, o serviço de Front-end estará rodando na port 3000 da sua máquina, o Back-end estará rodando na porta 3001 e o banco de dados MySQL estará rodando na porta 3002.
 
 2. Para rodar os testes de integração e verificar a sua cobertura são utilizados os seguintes comandos:
-`cd app/backend
+`cd app
+cd backend
 npm run test:coverage`
 
 
